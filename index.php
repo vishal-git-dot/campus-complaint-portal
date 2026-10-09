@@ -1,0 +1,1 @@
+<?php require_once 'config.php'; if (!empty($_SESSION['user'])) { header('Location: '.($_SESSION['user']['role']==='admin'?'admin.php':'dashboard.php')); } else { header('Location: login.php'); } exit;
